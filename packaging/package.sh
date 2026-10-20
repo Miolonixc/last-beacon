@@ -7,6 +7,7 @@ stage=build/package
 mkdir -p "$stage/ports/last-beacon" "$stage/ROMS/PORTS" dist
 cp build/muos/last-beacon "$stage/ports/last-beacon/"
 cp README.md LICENSE VERSION "$stage/ports/last-beacon/"
+cp -R docs "$stage/ports/last-beacon/"
 mkdir -p "$stage/ports/last-beacon/licenses"
 cp assets/fonts/*-OFL.txt "$stage/ports/last-beacon/licenses/"
 cp licenses/*.txt "$stage/ports/last-beacon/licenses/"
