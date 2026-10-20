@@ -36,7 +36,7 @@ int main(int argc,char **argv){
   else if(arg=="--fullscreen")opt.fullscreen=true;
   else if(arg=="--demo")opt.demo=true;
   else if(arg=="--help"){
-   std::cout<<"Last Beacon 0.2.0\n--fullscreen --level 1..3 --demo --frames N --report FILE --audit FILE\n--screenshot FILE.bmp --scene play|title|pause|won|lost\n";return 0;
+   std::cout<<"Last Beacon 0.2.1\n--fullscreen --level 1..3 --demo --frames N --report FILE --audit FILE\n--screenshot FILE.bmp --scene play|title|pause|won|lost\n";return 0;
   }else{std::cerr<<"Unknown option: "<<arg<<'\n';return 2;}
  }
  Uint32 subsystems=SDL_INIT_VIDEO|SDL_INIT_GAMECONTROLLER;

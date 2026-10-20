@@ -4,16 +4,16 @@
   "freetype": "2.14.3",
   "sources": [
     {
-      "file": "PixelifySans.ttf",
-      "pixels": 14,
-      "weight": 600,
-      "sha256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5"
+      "file": "VT323-Regular.ttf",
+      "pixels": 18,
+      "weight": null,
+      "sha256": "cf4de751ada78ceac033dbe16a687742939995b77bc2a052ae17a4957958594d"
     },
     {
-      "file": "Jersey20-Regular.ttf",
-      "pixels": 24,
+      "file": "StardosStencil-Bold.ttf",
+      "pixels": 28,
       "weight": null,
-      "sha256": "76670d7e8826860e3d2f2846b88bc1652135b8d54b6adfa5a87649b9fa4bd3b4"
+      "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74"
     }
   ],
   "glyphs": 190,
@@ -22,5 +22,5 @@
     384
   ],
   "threshold": 128,
-  "alpha_sha256": "5d53771bf0943b708a3a7352eb2da782501ba276ee64b3572db1e2d158ea7c85"
+  "alpha_sha256": "fd1cc8f8458a124fbaac20536ab48ed2a5e0742e3ef6d784688c8f40987171e5"
 }

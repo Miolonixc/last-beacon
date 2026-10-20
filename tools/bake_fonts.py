@@ -11,7 +11,7 @@ width, height = 512, 384
 atlas = Image.new('L', (width, height))
 draw = ImageDraw.Draw(atlas)
 glyphs, sources = [], []
-styles = [('PixelifySans.ttf', 14, 600), ('Jersey20-Regular.ttf', 24, None)]
+styles = [('VT323-Regular.ttf', 18, None), ('StardosStencil-Bold.ttf', 28, None)]
 for style, (filename, size, weight) in enumerate(styles):
     path = fontdir / filename
     font = ImageFont.truetype(str(path), size)

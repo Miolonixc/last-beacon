@@ -3,10 +3,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 [ "${BEACON_SKIP_BUILD:-0}" = 1 ] || bash tools/build-muos.sh
 version=$(cat VERSION)
-stage=build/package
+stage="build/package-$version"
 mkdir -p "$stage/ports/last-beacon" "$stage/ROMS/PORTS" dist
 cp build/muos/last-beacon "$stage/ports/last-beacon/"
-cp README.md LICENSE VERSION "$stage/ports/last-beacon/"
+cp README.md LICENSE VERSION screenshot.png "$stage/ports/last-beacon/"
 cp -R docs "$stage/ports/last-beacon/"
 mkdir -p "$stage/ports/last-beacon/licenses"
 for license in assets/fonts/*-OFL.txt licenses/*.txt; do

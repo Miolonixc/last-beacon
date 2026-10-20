@@ -84,7 +84,7 @@ void draw(const World &w,bool pad,const Profile &profile,int selected){
  case 4:if(w.invulnerable>0&&int(w.time*12)%2)break;
   diamond(p.x,p.y,5,2,{21,40,48});rect(p.x-3,p.y-6,2,6,Ink);rect(p.x+1,p.y-6,2,6,Ink);rect(p.x-4,p.y-13,8,8,Mint);rect(p.x-3,p.y-19,6,6,Gold);rect(p.x-2,p.y-17,5,2,Ink);rect(p.x-6,p.y-12,3,7,{215,141,65});break;
  }}
- panel(8,8,304,22);text("BEACON "+std::to_string(w.mission+1),15,15,Gold);text("CELL "+std::to_string(w.collected())+"/3",90,15);text("HP",168,15);
+ panel(8,8,304,22);text("BEACON"+std::to_string(w.mission+1),15,15,Gold);text("CELL "+std::to_string(w.collected())+"/3",90,15);text("HP",168,15);
  for(int i=0;i<3;i++)rect(192+i*9,15,6,10,i<w.health?Mint:Color{49,63,74});
  text(w.cooldown<=0?"DASH OK":"CHARGE",242,15,w.cooldown<=0?Mint:Paper);
  panel(8,205,304,27);
@@ -92,12 +92,15 @@ void draw(const World &w,bool pad,const Profile &profile,int selected){
  if(!w.lit&&w.collected()==3&&distance(w.player,Relay)<1.2f)objective=pad?"A: LIGHT THE BEACON":"E: LIGHT THE BEACON";
  text(objective,15,211,Gold);text(pad?"A:USE  B:DASH  START:PAUSE":"E:USE  SPACE:DASH  ESC:PAUSE",15,222);
  if(w.phase==Phase::Title){
-  panel(24,45,272,151);centered("LAST BEACON",56,Gold,2);
-  centered("SALVAGE. LIGHT. COME HOME.",79);
+  panel(24,45,272,151);
+  for(int x:{30,288})for(int y:{51,188})rect(x,y,2,2,{125,113,86});
+  centered("LAST BEACON",53,Gold,2);
+  line(91,78,149,78,{130,108,68});diamond(160,78,2,2,Gold);line(171,78,229,78,{130,108,68});
+  centered("SALVAGE. LIGHT. COME HOME.",84);
   centered(std::string("< ")+std::to_string(selected+1)+" / "+Levels[selected].name+" >",99,Mint);
   centered(selected<=profile.unlocked?"EXPEDITION READY":"FINISH PREVIOUS EXPEDITION",113,selected<=profile.unlocked?Paper:Red);
   centered(pad?"LEFT / RIGHT: CHOOSE":"LEFT / RIGHT: CHOOSE",129);
-  rect(55,144,210,17,{45,70,77});centered(pad?"A / START: DEPART":"ENTER: DEPART",149);
+  rect(55,144,210,19,selected<=profile.unlocked?Gold:Color{45,70,77});centered(pad?"A / START: DEPART":"ENTER: DEPART",148,selected<=profile.unlocked?Ink:Paper);
   centered(pad?"X: SOUND  SELECT: QUIT":"M: SOUND  Q: QUIT",171,Mint);
   centered(profile.sound?"SOUND ON":"SOUND OFF",184,Paper);
  }
