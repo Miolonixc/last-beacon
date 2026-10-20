@@ -1,0 +1,26 @@
+{
+  "google_fonts_commit": "47d54ca1ebb14fd864695f1d39dc734f39017c33",
+  "pillow": "12.3.0",
+  "freetype": "2.14.3",
+  "sources": [
+    {
+      "file": "PixelifySans.ttf",
+      "pixels": 14,
+      "weight": 600,
+      "sha256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5"
+    },
+    {
+      "file": "Jersey20-Regular.ttf",
+      "pixels": 24,
+      "weight": null,
+      "sha256": "76670d7e8826860e3d2f2846b88bc1652135b8d54b6adfa5a87649b9fa4bd3b4"
+    }
+  ],
+  "glyphs": 190,
+  "dimensions": [
+    512,
+    384
+  ],
+  "threshold": 128,
+  "alpha_sha256": "5d53771bf0943b708a3a7352eb2da782501ba276ee64b3572db1e2d158ea7c85"
+}

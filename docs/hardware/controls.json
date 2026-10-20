@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "dpad_distance": 1.125162452359658,
+  "stick_distance": 0.5800255504717012,
+  "state": {
+    "phase": 0,
+    "mission": 0,
+    "x": 3.6171,
+    "y": 0.974125,
+    "health": 3,
+    "cells": 0,
+    "lit": false,
+    "time": 2.76811,
+    "cooldown": 0.320885,
+    "frames": 426,
+    "seconds": 7.10705,
+    "fps": 59.9405,
+    "controller": true,
+    "audio": true,
+    "notes": 9,
+    "video": "mali",
+    "renderer": "opengles2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "source": "hardware_controls.py stdout on device",
+  "dpad_distance": 1.1292353874192929,
+  "stick_distance": 1.9750998536198112,
+  "state": {
+    "phase": 0,
+    "mission": 0,
+    "x": 3.69509,
+    "y": 0.901877,
+    "health": 3,
+    "cells": 0,
+    "lit": false,
+    "time": 2.80224,
+    "cooldown": 0.0539832,
+    "frames": 516,
+    "seconds": 10.0195,
+    "fps": 51.4994,
+    "controller": true,
+    "audio": true,
+    "notes": 9,
+    "video": "mali",
+    "renderer": "opengles2"
+  }
+}

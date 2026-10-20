@@ -1,0 +1,18 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SDL2
+        run: sudo apt-get update && sudo apt-get install -y libsdl2-dev
+      - name: Build, test all missions and render UI
+        run: make all test screenshots
+      - name: Preserve UI frames
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-640x480
+          path: build/native/*.bmp
